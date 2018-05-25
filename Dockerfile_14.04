@@ -32,6 +32,7 @@ RUN apt-get update && apt-get install -y \
     g++-5 \
     clang \
     clang-3.9 \
+    libc++-dev \
     cmake \
     pkg-config \
     wget \

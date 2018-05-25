@@ -21,6 +21,7 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     clang \
     clang-5.0 \
+    libc++-dev \
     cmake \
     pkg-config \
     wget \
