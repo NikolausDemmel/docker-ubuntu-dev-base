@@ -31,12 +31,14 @@ RUN apt-get update && apt-get install -y \
     gcc-5 \
     g++-5 \
     clang \
+    clang-3.9 \
     cmake \
     pkg-config \
     wget \
     python \
     git \
-    ccache
+    ccache \
+    aptitude
 
 # Install larger libs
 RUN apt-get update && apt-get install -y \
