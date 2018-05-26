@@ -37,7 +37,8 @@ RUN apt-get update && apt-get install -y \
 # Install some tools
 RUN apt-get update && apt-get install -y \
     emacs \
-    vim
+    vim \
+    cmake-curses-gui
 
 # Install additional libs
 RUN apt-get update && apt-get install -y \
