@@ -20,13 +20,16 @@ ENV LC_ALL en_US.UTF-8
 RUN apt-get update && apt-get install -y \
     build-essential \
     clang \
+    clang-5.0 \
+    libc++-dev \
     cmake \
     pkg-config \
     wget \
     curl \
     python \
     git \
-    ccache
+    ccache \
+    aptitude
 
 # Install larger libs
 RUN apt-get update && apt-get install -y \
@@ -35,7 +38,8 @@ RUN apt-get update && apt-get install -y \
 # Install some tools
 RUN apt-get update && apt-get install -y \
     emacs \
-    vim
+    vim \
+    cmake-curses-gui
 
 # Install additional libs
 RUN apt-get update && apt-get install -y \
