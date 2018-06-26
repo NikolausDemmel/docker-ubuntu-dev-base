@@ -36,10 +36,16 @@ RUN apt-get update && apt-get install -y \
     pkg-config \
     wget \
     curl \
-    python \
     git \
     ccache \
     aptitude
+
+# Python
+RUN apt-get update && apt-get install -y \
+    python \
+    python3 \
+    libpython-all-dev \
+    libpython3-all-dev
 
 # Install larger libs
 RUN apt-get update && apt-get install -y \
