@@ -5,6 +5,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 # Basic packages
 RUN apt-get update && apt-get install -y \
+    apt-transport-https \
     software-properties-common \
     locales \
     && apt-get clean \
@@ -39,7 +40,7 @@ RUN apt-get update && apt-get install -y \
 
 # Install larger libs
 RUN apt-get update && apt-get install -y \
-    libboost-all-dev \
+    libboost-all-dev
     
 # Install some tools
 RUN apt-get update && apt-get install -y \
