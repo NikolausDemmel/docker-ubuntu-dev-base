@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 # non-persistent environment variables
 ARG DEBIAN_FRONTEND=noninteractive
@@ -19,13 +19,12 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
-# Install base dependencies
+# Install base C++ dev tools
 RUN apt-get update && apt-get install -y \
     build-essential \
-    clang \
-    clang-7 \
-    clang-8 \
     clang-9 \
+    clang-10 \
+    clang \
     libc++-dev \
     clang-format \
     cmake \
