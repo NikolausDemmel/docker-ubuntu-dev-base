@@ -26,6 +26,8 @@ RUN apt-get update && apt-get install -y \
     clang-7 \
     clang-8 \
     clang-9 \
+    g++-7 \
+    g++-8 \
     libc++-dev \
     clang-format \
     cmake \
